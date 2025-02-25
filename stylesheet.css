@@ -1,0 +1,365 @@
+/* Reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing:border-box;
+scroll-behavior: smooth;
+}
+
+H1 {
+    font-family: Urbanist;
+    color: rgb(0, 255, 115);
+
+}
+
+p{
+    font-family: "Urbanist", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+  }
+
+/* Sticky Navigation */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #50311f;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(60, 55, 55, 0.1);
+}
+
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.navbar ul li{
+display:inline;
+}
+
+.navbar ul li a:hover {
+background: rgb(255, 255, 255);
+border-radius: 5px;
+}
+
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+}
+
+#home {
+    background-color: rgb(52, 158, 94);
+    h1 { color: beige;
+        font-size: 250px;
+        font-weight: bold;
+    }
+    p{
+        margin-top: 15px;
+    }
+    img {
+        margin-top: 50px;
+        opacity: 0.5;
+      }
+    
+}
+
+#about {
+    background-color: rgb(42, 131, 77);
+    h1 {
+        font-family: Urbanist;
+        margin-top: 0%;
+        margin-left: center;
+        margin-right: 142px;
+        color: bisque;
+    }
+}
+
+#example-text {
+    background-color: rgb(31, 105, 60);
+h1 {
+   text-align: center;
+   padding-left: 150%;
+  
+}
+
+p{
+    text-align: center;
+    padding-top: 600px;
+    padding-left: 10px;
+    }
+}
+
+#styles {
+    background-color: rgb(18, 71, 39);
+    
+    
+}
+
+
+#glyphs {
+    background-color: rgb(8, 56, 27);
+}
+
+/* This is for urbanist title in the home page*/
+.overlay-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: rgb(0, 0, 0); 
+    padding: 10px 20px; 
+    font-size: 250px; 
+    font-family: Urbanist;
+    font-weight: bold;
+    text-align: center;
+
+      }
+      
+      .overlay-text {
+        overflow: hidden;
+      }
+      
+      .overlay-text:hover{
+        cursor: pointer;
+      }
+      
+      .overlay-text::before {
+        content: "";
+        width: 100%;
+        height: 5%;
+      
+        background-color: #000000;
+        position: absolute;
+        bottom: 0%;
+        left: -100%;
+        transition: all 0.7s;
+      }
+      
+      .overlay-text:hover::before {
+        left: 0%;
+      }
+
+      /* This is for created by in the home page*/
+      
+      .container {
+        position: relative;
+        width: 50%;
+      }
+      
+      .image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      
+      .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        transition: .5s ease;
+        background-color: rgb(0, 0, 0);
+      }
+      
+      .container:hover .overlay {
+        opacity: 1;
+        color: rgb(0, 0, 0);
+      }
+      
+      .text {
+        color: rgb(0, 0, 0);
+        font-family: Urbanist;
+        font-weight: normal;
+        font-size: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+
+      /* This is for 9 font weights animation*/
+      h1.variable {
+        color: bisque;
+        display: inline-block;
+        font-family: var(--ff-r, Urbanist);
+        font-size: 6rem;
+        font-weight: 340;
+        font-variation-settings: "CASL" 1;
+        transition: font-weight 1s ease-in-out;
+      }
+      
+      h1.variable:hover {
+        font-weight: 900;
+      }
+    
+      /* This is for 9 font weights*/
+   .Thin {
+        color: rgb(0, 0, 0);
+        font-family: Urbanist;
+        font-weight: 100;
+   padding-right: 70%;
+
+      }
+
+      .ExtraLight {
+       color: rgb(0, 0, 0);
+       font-weight: 200;
+6
+      }
+
+      .Light{
+        color: rgb(0, 0, 0);
+        font-weight: 300;
+      }
+
+      .Regular{
+        color: rgb(0, 0, 0);
+        font-weight: 400;
+      }
+
+      .Medium{
+        color: rgb(0, 0, 0);
+        font-weight: 500;
+      }
+
+      .SemiBold{
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+      }
+
+      .Bold{
+        color: rgb(0, 0, 0);
+        font-weight: 700;
+      }
+
+      .ExtraBold{
+        color: rgb(0, 0, 0);
+        font-weight: 800;
+      }
+
+      .Black {
+        color: rgb(0, 0, 0);
+        font-family: Urbanist;
+        font-weight: 900;
+        font-style: italic;
+      }
+    
+/* This is for Roman and Italic Animation */
+      .container{
+        display: inline-block;
+      }
+      .typed-out{
+        font-family: Urbanist;
+        font-style: normal;
+        overflow: hidden;
+        border-right: .15em solid bisque;
+        white-space: nowrap;
+        animation: 
+          typing 3s forwards;
+        font-size: 3.5rem;
+        width: 0;
+        margin-top: 10%;
+        margin-right: 50px;
+        margin-bottom: 300px;
+
+      }
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+
+      .typed-outtt{
+        font-family: Urbanist;
+        font-style: italic;
+        overflow: hidden;
+        border-right: .15em solid bisque;
+        white-space: nowrap;
+        animation: 
+          typing 3s forwards;
+        font-size: 3.5rem;
+        width: 0;
+        margin-top: 10%;
+        margin-left: -50%;
+      }
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+
+/* this is for glyphs/*
+ /*ROW 1*/
+ .wrapper1 {
+    
+    display: grid;
+    position: relative;
+    width: 1370px;
+    left: -75px;
+    grid-template-columns: 159px 159px 159px 159px 159px 159px 159px 159px 159px;
+    grid-template-rows: 216px 130px;
+padding-left:1600px;
+justify-content: center;
+}
+
+    /*ROW 2*/
+.wrapper2 {
+    display: grid;
+    position: static;
+    width: 1370px;
+    left: -75px;
+    grid-template-columns: 159px 159px 159px 159px 159px 159px 159px 159px 159px;
+    grid-template-rows: 226px 30px;
+ padding-top: 350px;
+ padding-right: 1600px;
+ justify-content: center;
+    
+}
+
+    /*GLYPH TEXT ANIMATION*/
+.hover-text {
+    background-color: rgb(18, 71, 39);
+    color: rgb (31,105,60);
+    padding: 0px;
+    font: 100px 'Urbanist', serif;
+    font-style: italic;
+    font-weight: 1000;
+    text-align: center;
+    line-height: 226px;
+    transition: all 0.3s ease;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+
+.hover-text:hover {
+    font: 150px 'Urbanist', serif;
+    color: bisque;
+    font-weight: 900;
+    font-style: normal;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
